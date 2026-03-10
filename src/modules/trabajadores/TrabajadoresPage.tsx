@@ -127,7 +127,7 @@ export default function TrabajadoresPage() {
                 <td>
                   <div className="flex gap-1">
                     <button onClick={() => handleEdit(t)} className="p-1.5 rounded-lg cursor-pointer" style={{ color: 'var(--color-caramel)' }}><Edit3 size={14} /></button>
-                    <button onClick={() => toggleTrabajador(t.id)} className="p-1.5 rounded-lg cursor-pointer"
+                    <button onClick={() => toggleTrabajador(t.id, !t.activo)} className="p-1.5 rounded-lg cursor-pointer"
                       style={{ color: t.activo ? 'var(--color-danger)' : 'var(--color-success)' }}>
                       {t.activo ? <UserX size={14} /> : <UserCheck size={14} />}
                     </button>
